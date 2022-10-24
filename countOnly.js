@@ -14,14 +14,14 @@ const countOnly = function(allItems, itemsToCount) {
   for (const item of allItems) {
     if (itemsToCount[item]) { // count only if it exists on itemsToCount
       if (results[item]) { //Increment the count of each item into results as we encounter each string item in the array. If the item already exists, sum + 1
-        results[item] += 1; 
+        results[item] += 1;
       } else { // if it doesn't already exist, count 1
-       results[item] = 1;
+        results[item] = 1;
       }
     }
-  } 
+  }
   return results;
-}
+};
 
 const firstNames = [
   "Karl",
