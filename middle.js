@@ -26,11 +26,11 @@ const middle = function(array) {
   if (arrLen === 1 || arrLen === 2) { // if === 1 || ===2 return []
     return [];
   } else if (arrLen > 2 && arrLen % 2 === 0) {
-    middle = (arrLen / 2) - 1;
+    middle = (arrLen / 2) - 1; // index
     middleResult = [array[middle], array[middle + 1]];
     return middleResult; // if > 2 && % 2 === 0 (even) => the 2 numbers in the middle
   } else if (arrLen > 2 && arrLen !== 0) {
-    middle = (arrLen / 2) - 0.5;
+    middle = (arrLen / 2) - 0.5; // index
     middleResult = [array[middle]];
     return middleResult; // if > 2 && %2 !== 0 (odd) => one number in the middle
   }
