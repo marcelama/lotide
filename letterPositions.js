@@ -11,9 +11,9 @@ const letterPositions = function(sentence) {
     }
 
     if (results[sentence[i]]) { // check if already exists
-      results[sentence[i]].push(i); // add letter's index, not the letter itself (it's already there)
+      results[sentence[i]].push(i); // add letter index, not the letter (it's already there)
     } else {
-      results[sentence[i]] = [i];  // create new array only if it doens't already exist, letter + index
+      results[sentence[i]] = [i];  // create new array only if it doens't already exist
        
     }
   }

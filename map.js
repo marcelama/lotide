@@ -5,7 +5,7 @@ const map = function(array, callback) {
   const results = [];
   for (item of array) {
     const newItem = callback(item);
-    results.push(newItem); //execute callback (line 37)
+    results.push(newItem); //execute callback (line 37()
   }
   return results;
 }
@@ -34,15 +34,13 @@ const assertArraysEqual = function(actual, expected) {
 
 const words = ["ground", "control", "to", "major", "tom"];
 
-const getFirstLetter = function(word) { //this could be refactored to (word => word[0]);
+const getFirstLetter = function(word) { //this could be refactored to (words, word => word[0]);
   return word[0];
 }
 
-const results1 = map(words, getFirstLetter); //or delete line 37 and 38 and const results1 = map(words, word => word[0]);
+const results1 = map(words, getFirstLetter); 
 console.log(results1); //to check only
 
 //TEST map function with asserArraysEqual
 console.log(assertArraysEqual(results1, [ 'g', 'c', 't', 'm', 't' ]));
-
-
 
