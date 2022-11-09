@@ -21,12 +21,12 @@ module.exports = {
   countLetters: countLetters,
   countOnly: countOnly,
   eqArrays: eqArrays,
-  eqObjects: eqObjects,git 
+  eqObjects: eqObjects,
   findKey: findKey,
-  findKeyByValue: findKeyByValue, 
+  findKeyByValue: findKeyByValue,
   flatten: flatten,
   letterPositions: letterPositions,
   map: map,
-  takeUntil: takeUntil, 
+  takeUntil: takeUntil,
   without: without,
 };
