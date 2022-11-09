@@ -1,22 +1,25 @@
-const eqArrays = (arg1, arg2) => {
-  if (arg1.length !== arg2.length) {
-    return false;
-  }
-  for (let i = 0; i < arg1.length; i++) {
-    if (arg1[i] !== arg2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+const eqArrays = require('./eqArrays');
 
-const assertArraysEqual = function(actual, expected) {
-  if (!eqArrays(actual, expected)) {
-    console.log(`👎 Assertion Failed: ${actual} !== ${expected}`);
-  } else {
-    console.log(`👍 Assertion Passed: ${actual} === ${expected}`);
-  }
-};
+
+// const eqArrays = (arg1, arg2) => {
+//   if (arg1.length !== arg2.length) {
+//     return false;
+//   }
+//   for (let i = 0; i < arg1.length; i++) {
+//     if (arg1[i] !== arg2[i]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// };
+
+// const assertArraysEqual = function(actual, expected) {
+//   if (!eqArrays(actual, expected)) {
+//     console.log(`👎 Assertion Failed: ${actual} !== ${expected}`);
+//   } else {
+//     console.log(`👍 Assertion Passed: ${actual} === ${expected}`);
+//   }
+// };
 
 //Implement middle which will take in an array and return the middle-most element(s) of the given array.
 const middle = function(array) {
@@ -36,7 +39,4 @@ const middle = function(array) {
   }
 };
 
-//TEST CODE
-console.log(assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]));
-console.log(assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]));
-console.log(assertArraysEqual(middle([1, 2, 3, 4, 5, 6, 7]), [4]));
+module.exports = middle;
