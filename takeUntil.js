@@ -1,3 +1,6 @@
+const assertArraysEqual = require('./assertArraysEqual');
+const eqArrays = require('./eqArrays');
+
 // Implement takeUntil function
 // 2 parameters:
 //The array to work with
@@ -27,26 +30,6 @@ const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Re
 const results2 = takeUntil(data2, x => x === ',');
 //test: console.log(results2); [ 'I\'ve', 'been', 'to', 'Hollywood' ]
 
-
-const eqArrays = (arg1, arg2) => {
-  if (arg1.length !== arg2.length) {
-    return false;
-  }
-  for (let i = 0; i < arg1.length; i++) {
-    if (arg1[i] !== arg2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual = function(actual, expected) {
-  if (!eqArrays(actual, expected)) {
-    return `👎 Assertion Failed: ${actual} !== ${expected}`;
-  } else {
-    return `👍 Assertion Passed: ${actual} === ${expected}`;
-  }
-};
 
 console.log(assertArraysEqual(results1, [ 1, 2, 5, 7, 2 ]));
 console.log(assertArraysEqual(results2, [ 'I\'ve', 'been', 'to', 'Hollywood' ]));

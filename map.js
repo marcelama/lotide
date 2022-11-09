@@ -1,3 +1,6 @@
+const eqArrays = require('./eqArrays');
+const assertArraysEqual = require('./assertArraysEqual');
+
 // map function will take 2 arguments: an array to map, a callback function
 //map function will return a new array based on the results of the callback function
 
@@ -9,28 +12,6 @@ const map = function(array, callback) {
   }
   return results;
 }
-
-
-//COPIED functions:
-const eqArrays = (arg1, arg2) => {
-  if (arg1.length !== arg2.length) {
-    return false;
-  }
-  for (let i = 0; i < arg1.length; i++) {
-    if (arg1[i] !== arg2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual = function(actual, expected) {
-  if (!eqArrays(actual, expected)) {
-    return `👎 Assertion Failed: ${actual} !== ${expected}`;
-  } else {
-    return `👍 Assertion Passed: ${actual} === ${expected}`;
-  }
-};
 
 const words = ["ground", "control", "to", "major", "tom"];
 
