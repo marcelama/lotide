@@ -21,7 +21,7 @@ module.exports = {
   countLetters: countLetters,
   countOnly: countOnly,
   eqArrays: eqArrays,
-  eqObjects: eqObjects,
+  eqObjects: eqObjects,git 
   findKey: findKey,
   findKeyByValue: findKeyByValue, 
   flatten: flatten,
