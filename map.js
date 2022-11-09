@@ -44,3 +44,4 @@ console.log(results1); //to check only
 //TEST map function with asserArraysEqual
 console.log(assertArraysEqual(results1, [ 'g', 'c', 't', 'm', 't' ]));
 
+module.exports = map;

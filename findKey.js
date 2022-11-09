@@ -49,6 +49,7 @@ assertEqual(findKey(list, getStars), "noma");
 assertEqual(findKey(list, getStars), "Akaleri");
 assertEqual(findKey(list, getStars4), undefined);
 
+module.exports = findKey;
 
 
 
