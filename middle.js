@@ -1,13 +1,3 @@
-const eqArrays = require('./eqArrays');
-
-// const assertArraysEqual = function(actual, expected) {
-//   if (!eqArrays(actual, expected)) {
-//     console.log(`👎 Assertion Failed: ${actual} !== ${expected}`);
-//   } else {
-//     console.log(`👍 Assertion Passed: ${actual} === ${expected}`);
-//   }
-// };
-
 //Implement middle which will take in an array and return the middle-most element(s) of the given array.
 const middle = function(array) {
   let arrLen = array.length;

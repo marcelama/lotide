@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@marcelama/lotide",
+  "version": "1.0.1",
+  "description": "Lotide Function library created with Lighhouse Labs Web Flex Program",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/marcelama/lotide.git"
   },
-  "author": "",
+  "author": "Marcela Ang",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/marcelama/lotide/issues"

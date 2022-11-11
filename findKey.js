@@ -35,19 +35,10 @@ const list = {
 //   "Akelarre":  { stars: 3 }
 // }, x => x.stars === 1) // => "noma"
 
-// //Functions copied:
-const assertEqual = function(actual, expected) {
-  if (actual !== expected) {
-    console.log(`👎 Assertion Failed: ${actual} !== ${expected}`);
-  } else {
-    console.log(`👍 Assertion Passed: ${actual} === ${expected}`);
-  }
-};
 
-
-assertEqual(findKey(list, getStars), "noma");
-assertEqual(findKey(list, getStars), "Akaleri");
-assertEqual(findKey(list, getStars4), undefined);
+// assertEqual(findKey(list, getStars), "noma");
+// assertEqual(findKey(list, getStars), "Akaleri");
+// assertEqual(findKey(list, getStars4), undefined);
 
 module.exports = findKey;
 

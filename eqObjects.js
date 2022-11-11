@@ -1,5 +1,3 @@
-const assertEqual = require('./assertEqual');
-
 const eqObjects = function(obj1, obj2) {
 // same number of keys
   const obj1Keys = Object.keys(obj1).length;
@@ -40,11 +38,11 @@ const eqObjects = function(obj1, obj2) {
 // const abc = { a: "1", b: "2", c: "3" };
 // assertEqual(eqObjects(ab, abc), false); // => false
 
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
-assertEqual(eqObjects(cd, dc), true); // => true
+// const cd = { c: "1", d: ["2", 3] };
+// const dc = { d: ["2", 3], c: "1" };
+// assertEqual(eqObjects(cd, dc), true); // => true
 
-const cd2 = { c: "1", d: ["2", 3, 4] };
-assertEqual(eqObjects(cd, cd2), false); // => false
+// const cd2 = { c: "1", d: ["2", 3, 4] };
+// assertEqual(eqObjects(cd, cd2), false); // => false
 
 module.exports = eqObjects;

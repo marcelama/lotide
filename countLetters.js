@@ -1,5 +1,3 @@
-const assertEqual = require('./assertEqual');
-
 //The function should take in a sentence (as a string) and then return a count of each of the letters in that sentence.
 
 const countLetters = function(sentence) {
@@ -18,13 +16,14 @@ const countLetters = function(sentence) {
 };
 
 
-const result1 = countLetters('lighthouse in the house'); //in order to use assertEqual function
-// to check only: console.log(result1);
+// const result1 = countLetters('lighthouse in the house'); //in order to use assertEqual function
+// console.log(result1);
 
-console.log(assertEqual(result1['l'], 1));
-console.log(assertEqual(result1['h'], 4));
-console.log(assertEqual(result1['a'], 2));
-console.log(assertEqual(result1['e'], 3));
-console.log(assertEqual(result1['i'], 2));
+// console.log(assertEqual(result1['l'], 1));
+// console.log(assertEqual(result1['h'], 4));
+// console.log(assertEqual(result1['a'], 2));
+// console.log(assertEqual(result1['e'], 3));
+// console.log(assertEqual(result1['i'], 2));
 
 module.exports = countLetters;
+

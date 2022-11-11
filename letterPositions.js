@@ -1,6 +1,3 @@
-const assertArraysEqual = require('./assertArraysEqual');
-const eqArrays = require('./eqArrays');
-
 //letterPositions which will return all the indices (zero-based positions) in the string where each character is found.
 //For each letter, instead of returning just one number to represent its number of occurrences, multiple numbers may be needed to represent all the places in the string that it shows up.
 
@@ -26,10 +23,10 @@ const letterPositions = function(sentence) {
 
 // results = { h: [0], e: [1], l: [2, 3], o: [4] }
 
-console.log(letterPositions('hello'));
+// console.log(letterPositions('hello'));
 
 
-console.log(assertArraysEqual(letterPositions('hello').e, [1]));
+// console.log(assertArraysEqual(letterPositions('hello').e, [1]));
 
 
 module.exports = letterPositions;
